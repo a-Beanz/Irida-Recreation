@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="shuck/good girl" icon="rose" scale="1.25" x="45" y="75">
+	<anim name="idle" anim="idle" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singUP" anim="up" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="left" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="right" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="down" x="0" y="0" fps="24" loop="false"/>
+</character>

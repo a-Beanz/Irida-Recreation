@@ -1,0 +1,4 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="shuck/dbtgtalk" icon="detg" scale="2.2" x="145" y="-142">
+	<anim name="gay" anim="talk" x="0" y="0" fps="24" loop="false"/>
+</character>
