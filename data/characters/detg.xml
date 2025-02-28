@@ -1,9 +1,9 @@
 <!DOCTYPE codename-engine-character>
 <character y="-350" sprite="shuck/DETG" scale="1.35" camx="-670" camy="-350" icon="detg" color="#EC8F16" holdTime="6.5">
-	<anim name="idle" anim="IDLE" x="0" y="0" fps="24" loop="false"/>
-	<anim name="singUP" anim="UP" x="289" y="623" fps="24" loop="false"/>
-	<anim name="singLEFT" anim="LEFT" x="196" y="-10" fps="24" loop="false"/>
+	<anim name="idle" anim="IDLE" x="0" y="0" fps="24" loop="false" indices="0,3,5,7..16"/>
+	<anim name="singUP" anim="UP" x="274" y="418" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="LEFT" x="141" y="10" fps="24" loop="false"/>
 	<anim name="singRIGHT" anim="RIGHT" x="15" y="-161" fps="24" loop="false"/>
 	<anim name="singDOWN" anim="DOWN" x="190" y="-322" fps="24" loop="false"/>
-	<anim name="bitch" anim="Bruh What" x="-5" y="0" fps="24" loop="false"/>
+	<anim name="bitch" anim="Bruh What" x="12" y="165" fps="20" loop="false"/>
 </character>

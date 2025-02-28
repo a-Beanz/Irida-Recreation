@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="execretion/rosie" icon="rose" color="#71E3F3" flipX="true" x="720" camx="-1850" camy="-255">
+	<anim name="idle" anim="Idle" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singUP" anim="Up" x="10" y="55" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="Left" x="-15" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="Right" x="0" y="-8" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="Down" x="5" y="-5" fps="24" loop="false"/>
+</character>
