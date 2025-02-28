@@ -1,7 +1,6 @@
-var black;
-
 function postCreate() {
-    insert(5, black = new FlxSprite().makeGraphic(FlxG.width * 5, FlxG.height * 5, FlxColor.BLACK));
+    for (obj in FlxG.state.stage.stageSprites.keys())
+	FlxG.state.stage.stageSprites.get(obj).visible = false;
 
     for (i => char in strumLines.members[1].characters)
         if (i != 1)
@@ -26,8 +25,17 @@ function postUpdate(elapsed) {
         dad.debugMode = false;
 }
 
+function nightmareMarvin() {
+    for (i => char in strumLines.members[1].characters)
+        if (i != 2)
+            char.visible = false;
+        else
+            char.visible = true;
+}
+
 function lightsOn() {
-    black.kill();
+    for (obj in FlxG.state.stage.stageSprites.keys())
+	FlxG.state.stage.stageSprites.get(obj).visible = true;
 
     camHUD.flash();
     camHUD.alpha = 1;
@@ -65,11 +73,18 @@ function shutUpMF() {
 }
 
 function dingleBerry() {
+    trace(FlxG.state.stage.stageSprites);
+
+    for (obj in FlxG.state.stage.stageSprites.keys())
+	FlxG.state.stage.stageSprites.get(obj).kill();
+
     camHUD.flash();
     camHUD.alpha = 1;
-    
+
+    defaultCamZoom += 0.25;
+
     for (i => char in strumLines.members[1].characters)
-        if (i != 2)
+        if (i != 3)
             char.visible = false;
         else
             char.visible = true;

@@ -1,4 +1,9 @@
 var iridaHealthBar;
+var scoreTxtPos = [250, 0, -250];
+
+function create(){ //no irida song has a countdown lol
+   introLength = 0;
+}
 
 function postCreate() {
     iridaHealthBar = new FlxSprite(0, healthBar.y - 95).loadGraphic(Paths.image("game/iridaHealthBar"));
@@ -6,6 +11,16 @@ function postCreate() {
     insert(FlxG.state.members.indexOf(iconP1), iridaHealthBar);
 
     healthBar.setGraphicSize(iridaHealthBar.width * 0.8, 20);
+
+    for (i => txt in [accuracyTxt, missesTxt, scoreTxt]) {
+	txt.clearFormats();
+	txt.font = Paths.font("Mario Font.ttf");
+	txt.color = FlxColor.RED;
+	txt.size += 5;
+	txt.x = scoreTxtPos[i];
+	txt.y -= 5;
+	txt.fieldWidth = iridaHealthBar.width;
+    }
 }
 
 function postUpdate(elapsed) {

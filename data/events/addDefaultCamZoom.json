@@ -1,0 +1,14 @@
+{
+    "params": [
+        {
+            "name": "Ammount",
+            "type": "Float(-5, 5, 0.1, 2)",
+            "defaultValue": "1"
+        },
+        {
+            "name": "Snap",
+            "type": "Bool",
+            "defaultValue": "false"
+        }
+    ]
+}

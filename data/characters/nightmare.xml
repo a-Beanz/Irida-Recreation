@@ -1,0 +1,4 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="shuck/Marvin Scary" icon="marvin" scale="0.65" flipX="true" x="145" y="-142">
+	<anim name="gay" anim="anim" x="0" y="0" fps="12" loop="false"/>
+</character>
