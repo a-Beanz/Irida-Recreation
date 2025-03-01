@@ -49,7 +49,7 @@ function nightmareMarvin() {
 			char.visible = true;
 }
 
-function lightsOn() {
+function lightsOnFirst() {
 	for (obj in FlxG.state.stage.stageSprites.keys())
 		FlxG.state.stage.stageSprites.get(obj).visible = true;
 
@@ -63,6 +63,25 @@ function lightsOn() {
 			char.visible = true;
 
 	for (i => char in strumLines.members[2].characters)
+		if (i != 0)
+			char.visible = false;
+		else
+			char.visible = true;
+	for (i => char in strumLines.members[0].characters)
+		if (i != 0)
+			char.visible = false;
+		else
+			char.visible = true;
+}
+
+function lightsOnSecond() {
+	for (obj in FlxG.state.stage.stageSprites.keys())
+		FlxG.state.stage.stageSprites.get(obj).visible = true;
+
+	camHUD.flash();
+	camHUD.alpha = 1;
+
+	for (i => char in strumLines.members[1].characters)
 		if (i != 0)
 			char.visible = false;
 		else
@@ -84,22 +103,28 @@ function shutUpMF() {
 			char.playAnim("gay");
 		} else
 			char.visible = false;
-
+	for (i => char in strumLines.members[1].characters)
+		if (i == 4){
+			char.visible = true;
+			char.playAnim("gay");
+		}else{
+			char.visible = false;
+		}
 	FlxTween.tween(camHUD, {alpha: 0}, 0.35);
 }
 
 function deadWoman() {
 	for (obj in FlxG.state.stage.stageSprites.keys())
 		FlxG.state.stage.stageSprites.get(obj).visible = true;
-
+	trace("test");
 	camHUD.flash();
 	camHUD.alpha = 1;
 
 	for (i => char in strumLines.members[2].characters)
-		if (i != 1)
-			char.visible = false;
-		else
+		if (i == 1)
 			char.visible = true;
+		else if (i == 0)
+			char.visible = false;
 }
 
 function dingleBerry() {

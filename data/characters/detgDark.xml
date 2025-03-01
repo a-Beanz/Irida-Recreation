@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="shuck/detgDark" scale="2" camx="0" camy="-100" icon="detg" color="#EC8F16" holdTime="6.5">
+	<anim name="idle" anim="idle" x="-2" y="0" fps="12" loop="false" indices="0,3,5,7..16"/>
+	<anim name="singUP" anim="up" x="-3" y="10" fps="12" loop="false"/>
+	<anim name="singLEFT" anim="left" x="273" y="0" fps="12" loop="false"/>
+	<anim name="singRIGHT" anim="right" x="-2" y="0" fps="12" loop="false"/>
+	<anim name="singDOWN" anim="down" x="-1" y="0" fps="12" loop="false"/>
+</character>

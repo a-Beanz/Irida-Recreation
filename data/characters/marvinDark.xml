@@ -1,8 +1,12 @@
 <!DOCTYPE codename-engine-character>
-<character sprite="shuck/DARK_MARVIN" scale="0.65" flipX="true" icon="marvin" color="#FF0000" holdTime="6.5">
+<character sprite="shuck/DARK_MARVIN" scale="0.65" flipX="true" isPlayer="true" icon="marvin" color="#FF0000" holdTime="6.5">
 	<anim name="idle" anim="idle" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singUP" anim="up" x="287" y="143" fps="24" loop="false"/>
-	<anim name="singRIGHT" anim="left" x="54" y="-93" fps="24" loop="false"/>
-	<anim name="singLEFT" anim="right" x="170" y="-113" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="left" x="54" y="-93" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="right" x="54" y="-93" fps="24" loop="false"/>
 	<anim name="singDOWN" anim="down" x="40" y="-30" fps="24" loop="false"/>
+	<anim name="singUPmiss" anim="up" x="287" y="143" fps="24" loop="false"/>
+	<anim name="singLEFTmiss" anim="left" x="54" y="-93" fps="24" loop="false"/>
+	<anim name="singRIGHTmiss" anim="right" x="54" y="-93" fps="24" loop="false"/>
+	<anim name="singDOWNmiss" anim="down" x="40" y="-30" fps="24" loop="false"/>
 </character>

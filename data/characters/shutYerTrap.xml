@@ -1,0 +1,4 @@
+<!DOCTYPE codename-engine-character>
+<character x="300" y="300" sprite="shuck/marvincutscene" scale="4.2" flipX="true" isPlayer="true" icon="marvin">
+	<anim name="gay" anim="marvincutscene animationthingidk" x="0" y="0" fps="12" loop="false"/>
+</character>
