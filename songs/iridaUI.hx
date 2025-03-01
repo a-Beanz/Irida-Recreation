@@ -1,4 +1,5 @@
 import flixel.FlxCamera;
+import funkin.backend.utils.WindowUtils;
 
 var iridaHealthBar;
 var scoreTxtPos = [250, 0, -250];
@@ -17,12 +18,16 @@ function postCreate() {
 	for (i => txt in [accuracyTxt, missesTxt, scoreTxt]) {
 		txt.clearFormats();
 		txt.font = Paths.font("Mario Font.ttf");
-		txt.color = FlxColor.RED;
+		txt.color = 0xFF8B0000;
+		txt.borderColor = 0xFF3E0408;
 		txt.size += 5;
 		txt.x = scoreTxtPos[i];
 		txt.y -= 5;
 		txt.fieldWidth = iridaHealthBar.width;
 	}
+
+	WindowUtils.suffix = " - " + FlxG.state.SONG.meta.displayName;
+	WindowUtils.updateTitle();
 }
 
 function postUpdate(elapsed) {

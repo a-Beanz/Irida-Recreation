@@ -1,4 +1,5 @@
 import flixel.FlxCamera;
+import funkin.backend.utils.WindowUtils;
 import flixel.group.FlxTypedSpriteGroup;
 
 var menuItems = [
@@ -7,6 +8,8 @@ var menuItems = [
         onPress: function() {
             camera.destroy();
             FlxG.state.closeSubState();
+            WindowUtils.prefix = "";
+            WindowUtils.updateTitle();
         }
     },
     {
@@ -65,6 +68,9 @@ function create() {
     }
 
     add(bottom);
+
+    WindowUtils.prefix = "Paused - ";
+    WindowUtils.updateTitle();        
 }
 
 function update(elapsed) {

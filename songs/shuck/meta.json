@@ -1,1 +1,8 @@
-null
+{
+	"displayName": "Shuck!",
+	"bpm": 95,
+	"icon": "detg",
+	"color": "#9271FD",
+	"coopAllowed": true,
+	"opponentModeAllowed": true
+}

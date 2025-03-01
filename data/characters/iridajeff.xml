@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="irida/jerry" icon="jerry" holdTime="5" camx="-400" camy="75" scale="1.5">
+	<anim name="idle" anim="Jeffy_idle" x="0" y="0" fps="10" loop="true"/>
+	<anim name="singUP" anim="Jeffy_up" x="77" y="34" fps="10" loop="false"/>
+	<anim name="singLEFT" anim="Jeffy_left" x="172" y="7" fps="10" loop="false"/>
+	<anim name="singRIGHT" anim="Jeffy_right" x="79" y="35" fps="10" loop="false"/>
+	<anim name="singDOWN" anim="Jeffy_down" x="0" y="0" fps="10" loop="false"/>
+</character>

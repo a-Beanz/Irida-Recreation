@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-stage>
+<stage folder="bg/irida/" zoom="0.6">
+	<gf x="185" y="616"/>
+	<sprite x="95" sprite="bg" y="-250" scale="3.5" name="bg"/>
+	<sprite x="91" y="-179" sprite="weirdshit" scale="4" name="weirdshit"/>
+	<sprite x="32" y="-244" sprite="floor" scale="5" name="floor"/>
+	<dad x="-112" y="-80"/>
+	<bf x="433" y="41"/>
+	<combo x="459" y="69"/>
+</stage>
