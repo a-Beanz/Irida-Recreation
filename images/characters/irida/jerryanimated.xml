@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="smlanimatedjeffy.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down jeffy0000" x="1" y="1" width="471" height="972"/>
+	<SubTexture name="down jeffy0001" x="1" y="1" width="471" height="972"/>
+	<SubTexture name="down jeffy0002" x="473" y="1" width="471" height="972"/>
+	<SubTexture name="down jeffy0003" x="473" y="1" width="471" height="972"/>
+	<SubTexture name="down jeffy0004" x="473" y="1" width="471" height="972"/>
+	<SubTexture name="down jeffy0005" x="473" y="1" width="471" height="972"/>
+	<SubTexture name="down jeffy0006" x="473" y="1" width="471" height="972"/>
+	<SubTexture name="down jeffy0007" x="473" y="1" width="471" height="972"/>
+	<SubTexture name="idle jeffy0000" x="945" y="1" width="388" height="982"/>
+	<SubTexture name="idle jeffy0001" x="945" y="1" width="388" height="982"/>
+	<SubTexture name="idle jeffy0002" x="1334" y="1" width="388" height="982"/>
+	<SubTexture name="idle jeffy0003" x="1334" y="1" width="388" height="982"/>
+	<SubTexture name="idle jeffy0004" x="1723" y="1" width="388" height="982"/>
+	<SubTexture name="idle jeffy0005" x="1723" y="1" width="388" height="982"/>
+	<SubTexture name="idle jeffy0006" x="2112" y="1" width="388" height="982"/>
+	<SubTexture name="idle jeffy0007" x="2112" y="1" width="388" height="982"/>
+	<SubTexture name="idle jeffy0008" x="2501" y="1" width="388" height="982"/>
+	<SubTexture name="idle jeffy0009" x="2501" y="1" width="388" height="982"/>
+	<SubTexture name="idle jeffy0010" x="2890" y="1" width="388" height="982"/>
+	<SubTexture name="idle jeffy0011" x="2890" y="1" width="388" height="982"/>
+	<SubTexture name="idle jeffy0012" x="3279" y="1" width="388" height="982"/>
+	<SubTexture name="left jeffy0000" x="1" y="984" width="469" height="1003"/>
+	<SubTexture name="left jeffy0001" x="1" y="984" width="469" height="1003"/>
+	<SubTexture name="left jeffy0002" x="471" y="984" width="469" height="1003"/>
+	<SubTexture name="left jeffy0003" x="471" y="984" width="469" height="1003"/>
+	<SubTexture name="left jeffy0004" x="471" y="984" width="469" height="1003"/>
+	<SubTexture name="left jeffy0005" x="471" y="984" width="469" height="1003"/>
+	<SubTexture name="left jeffy0006" x="471" y="984" width="469" height="1003"/>
+	<SubTexture name="left jeffy0007" x="471" y="984" width="469" height="1003"/>
+	<SubTexture name="right jeffy0000" x="941" y="984" width="527" height="991"/>
+	<SubTexture name="right jeffy0001" x="941" y="984" width="527" height="991"/>
+	<SubTexture name="right jeffy0002" x="1469" y="984" width="527" height="991"/>
+	<SubTexture name="right jeffy0003" x="1469" y="984" width="527" height="991"/>
+	<SubTexture name="right jeffy0004" x="1469" y="984" width="527" height="991"/>
+	<SubTexture name="right jeffy0005" x="1469" y="984" width="527" height="991"/>
+	<SubTexture name="right jeffy0006" x="1469" y="984" width="527" height="991"/>
+	<SubTexture name="up jeffy0000" x="1997" y="984" width="433" height="1001"/>
+	<SubTexture name="up jeffy0001" x="1997" y="984" width="433" height="1001"/>
+	<SubTexture name="up jeffy0002" x="2431" y="984" width="433" height="1001"/>
+	<SubTexture name="up jeffy0003" x="2431" y="984" width="433" height="1001"/>
+	<SubTexture name="up jeffy0004" x="2431" y="984" width="433" height="1001"/>
+	<SubTexture name="up jeffy0005" x="2431" y="984" width="433" height="1001"/>
+	<SubTexture name="up jeffy0006" x="2431" y="984" width="433" height="1001"/>
+	<SubTexture name="up jeffy0007" x="2431" y="984" width="433" height="1001"/>
+</TextureAtlas>
