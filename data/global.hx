@@ -11,7 +11,7 @@ function update(elapsed:Float) {
 	if (FlxG.keys.justPressed.F5)
 		FlxG.resetState();
     
-	Framerate.codenameBuildField.text = WindowUtils.winTitle = 'Jeffys Infinite Irida';
+	Framerate.codenameBuildField.text = WindowUtils.winTitle = "Jeffy's Infinite Irida";
 }
 
 function destroy() {

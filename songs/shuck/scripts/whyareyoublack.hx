@@ -100,18 +100,34 @@ function shutUpMF() {
 	for (i => char in strumLines.members[0].characters)
 		if (i == 2) {
 			char.visible = true;
-			char.playAnim("gay");
+			char.playAnim("gay", true); // looped
 		} else
 			char.visible = false;
+
 	for (i => char in strumLines.members[1].characters)
 		if (i == 4){
 			char.visible = true;
-			char.playAnim("gay");
-		}else{
+			char.playAnim("gay", true); // looped
+		} else {
 			char.visible = false;
 		}
+
 	FlxTween.tween(camHUD, {alpha: 0}, 0.35);
+
+	new FlxTimer().start(3.0, function(_) {
+		// After 3 seconds, you can restore things here
+		gf.visible = true;
+
+		for (i => char in strumLines.members[0].characters)
+			char.visible = true;
+
+		for (i => char in strumLines.members[1].characters)
+			char.visible = true;
+
+		FlxTween.tween(camHUD, {alpha: 1}, 0.35); // fade HUD back in
+	});
 }
+
 
 function deadWoman() {
 	for (obj in FlxG.state.stage.stageSprites.keys())

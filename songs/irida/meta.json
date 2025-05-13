@@ -1,1 +1,8 @@
-null
+{
+	"displayName": "Irida",
+	"bpm": 100,
+	"icon": "Jerry",
+	"color": "#9271FD",
+	"coopAllowed": true,
+	"opponentModeAllowed": true
+}

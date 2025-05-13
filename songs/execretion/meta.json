@@ -1,1 +1,8 @@
-null
+{
+	"displayName": "Execretion",
+	"bpm": 100,
+	"icon": "poop",
+	"color": "#9271FD",
+	"coopAllowed": true,
+	"opponentModeAllowed": true
+}

@@ -5,5 +5,5 @@
 	<anim name="singLEFT" anim="LEFT" x="141" y="10" fps="24" loop="false"/>
 	<anim name="singRIGHT" anim="RIGHT" x="15" y="-161" fps="24" loop="false"/>
 	<anim name="singDOWN" anim="DOWN" x="190" y="-322" fps="24" loop="false"/>
-	<anim name="bitch" anim="Bruh What" x="12" y="-35" fps="20" loop="false"/>
+	<anim name="bitch" anim="Bruh What" x="12" y="-35" fps="24" loop="true"/>
 </character>
