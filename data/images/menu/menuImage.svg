@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+    <rect x="50" y="50" width="400" height="400" fill="#4a90e2" rx="20" ry="20"/>
+    <text x="250" y="250" font-family="Arial" font-size="48" fill="white" text-anchor="middle" dominant-baseline="middle">Menu Image</text>
+    <circle cx="250" cy="150" r="50" fill="#ffffff" opacity="0.8"/>
+</svg>
