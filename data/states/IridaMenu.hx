@@ -207,7 +207,6 @@ function update(elapsed) {
             enterPressed = true;
             selectSound.play();
 
-            // Only fade in flash, do NOT fade it out automatically
             flashImage.alpha = 0;
             FlxTween.tween(flashImage, {alpha: 1}, 1, {
                 ease: FlxEase.quadOut,
@@ -215,7 +214,6 @@ function update(elapsed) {
                     FlxTween.tween(flashImage, {alpha: 0}, 0.5, {
                         ease: FlxEase.quadOut,
                         onComplete: function(_) {
-                            // Instantly load state after flash fades out
                             MusicBeatState.skipTransIn = MusicBeatState.skipTransOut = true;
                             FlxG.switchState(new MainMenuState());
                         }
@@ -223,7 +221,6 @@ function update(elapsed) {
                 }
             });
 
-            // Fade other elements normally
             FlxTween.tween(enterImage, {alpha: 0}, 1.5);
             FlxTween.tween(logoImage, {alpha: 0}, 1.5);
             FlxTween.tween(bg1, {alpha: 0}, 1.5);
