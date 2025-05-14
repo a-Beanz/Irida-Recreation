@@ -7,6 +7,7 @@ import funkin.backend.utils.WindowUtils;
 import flixel.system.FlxSound;
 import flixel.input.keyboard.FlxKey;
 import funkin.backend.MusicBeatState;
+import funkin.game.cutscenes.VideoCutscene;
 
 var pauseCam:FlxCamera;
 var flashCam:FlxCamera;
@@ -36,6 +37,7 @@ var beatTimer:Float = 0;
 var beatInterval:Float = 60 / BPM;
 
 var enterPressed:Bool = false;
+var currentVideo:VideoCutscene = null;
 
 function create() {
     warningSound = FlxG.sound.load(Paths.music('Warning'));
@@ -72,7 +74,13 @@ function create() {
                 },
                 onComplete: function(_) {
                     remove(warning);
-                    startScrollingBG();
+                    var videoPath = Paths.video("intro");
+                    currentVideo = new VideoCutscene(videoPath, function() {
+                        currentVideo = null;
+                        closeSubState();
+                        startScrollingBG();
+                    });
+                    openSubState(currentVideo);
                 }
             });
         }
@@ -161,6 +169,19 @@ function startScrollingBG() {
 }
 
 function update(elapsed) {
+    if (currentVideo != null && FlxG.keys.justPressed.check(FlxKey.ENTER)) {
+        var videoCamera = currentVideo.camera;
+        if (videoCamera != null && FlxG.cameras.list.contains(videoCamera)) {
+            FlxG.cameras.remove(videoCamera);
+        }
+        currentVideo.stop();
+        currentVideo.destroy();
+        currentVideo = null;
+        closeSubState();
+        startScrollingBG();
+        return;
+    }
+
     if (FlxG.width != lastWidth || FlxG.height != lastHeight) {
         lastWidth = FlxG.width;
         lastHeight = FlxG.height;
@@ -208,11 +229,23 @@ function update(elapsed) {
             selectSound.play();
 
             flashImage.alpha = 0;
-            FlxTween.tween(flashImage, {alpha: 1}, 1, {
+            FlxTween.tween(flashImage, {alpha: 1}, 0.3, {
                 ease: FlxEase.quadOut,
                 onComplete: function(_) {
-                    FlxTween.tween(flashImage, {alpha: 0}, 0.5, {
+                    // Fade out menu elements first
+                    FlxTween.tween(enterImage, {alpha: 0}, 0.3);
+                    FlxTween.tween(logoImage, {alpha: 0}, 0.3);
+                    FlxTween.tween(bg1, {alpha: 0}, 0.3);
+                    FlxTween.tween(bg2, {alpha: 0}, 0.3);
+                    FlxTween.tween(topImage, {alpha: 0}, 0.3);
+                    FlxTween.tween(topImage2, {alpha: 0}, 0.3);
+                    FlxTween.tween(bottomImage, {alpha: 0}, 0.3);
+                    FlxTween.tween(bottomImage2, {alpha: 0}, 0.3);
+                    
+                    // After menu elements fade out, fade out flash and switch state
+                    FlxTween.tween(flashImage, {alpha: 0}, 0.3, {
                         ease: FlxEase.quadOut,
+                        startDelay: 0.3,
                         onComplete: function(_) {
                             MusicBeatState.skipTransIn = MusicBeatState.skipTransOut = true;
                             FlxG.switchState(new MainMenuState());
@@ -220,15 +253,6 @@ function update(elapsed) {
                     });
                 }
             });
-
-            FlxTween.tween(enterImage, {alpha: 0}, 1.5);
-            FlxTween.tween(logoImage, {alpha: 0}, 1.5);
-            FlxTween.tween(bg1, {alpha: 0}, 1.5);
-            FlxTween.tween(bg2, {alpha: 0}, 1.5);
-            FlxTween.tween(topImage, {alpha: 0}, 1.5);
-            FlxTween.tween(topImage2, {alpha: 0}, 1.5);
-            FlxTween.tween(bottomImage, {alpha: 0}, 1.5);
-            FlxTween.tween(bottomImage2, {alpha: 0}, 1.5);
         }
     }
 }
