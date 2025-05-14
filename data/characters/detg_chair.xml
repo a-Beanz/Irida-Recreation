@@ -2,7 +2,7 @@
 <character x="250" y="-650" sprite="shuck/detgChair" scale="2.5" icon="detg" color="#EC8F16">
 	<anim name="idle" anim="idle" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singUP" anim="up" x="0" y="0" fps="24" loop="false"/>
-	<anim name="singLEFT" anim="left" x="0" y="0" fps="24" loop="false"/>
-	<anim name="singRIGHT" anim="right" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="left" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="right" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singDOWN" anim="down" x="0" y="0" fps="24" loop="false"/>
 </character>
