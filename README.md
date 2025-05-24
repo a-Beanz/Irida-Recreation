@@ -13,5 +13,4 @@ All help is greatly appreciated.
 If you represent the Jeffy's Infinite Irida team and would like this repository taken down, please message me on Discord and I will make the repository private.  
 ---
 Contact Information:
-- Discord
->@abeanz
+- Discord: **@abeanz**
