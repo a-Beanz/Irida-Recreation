@@ -2,8 +2,8 @@
 # Jeffy's Infinite Irida
 This is a *fork* of KittySleeper's recreation.
 ---
-This mod relies on ***Codename Engine.*** Do **not** submit issues if it does not work in Psych Engine.
--#https://github.com/CodenameCrew/CodenameEngine
+This mod relies on ***Codename Engine.*** Do **not** submit issues if it does not work in Psych Engine.  
+######https://github.com/CodenameCrew/CodenameEngine
 
 # CONTRIBUTING
 If you would like to contribute, please create a *fork* of the repository and open a pull request.  
