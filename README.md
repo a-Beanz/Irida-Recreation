@@ -17,8 +17,7 @@ Do **not** submit issues if it does not work in Psych Engine.
 You are **NOT** allowed to republish this modpack anywhere else (i.e., Mediafire, Gamebanana, Mega, Google Drive, etc.).
 
 You **ARE** allowed to:
-- Fork & Edit  
-- Redistribute **with proper attributions**
+- Fork & Edit  (mostly for actual contibutions)
 
 ---
 
