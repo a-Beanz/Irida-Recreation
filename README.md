@@ -2,27 +2,27 @@
 
 # Jeffy's Infinite Irida
 
-This is a *fork* of KittySleeper's recreation.
+This is a *fork* of KittySleeper's recreation.  
 
 ---
 
 This mod relies on ***Codename Engine.***  
 Do **not** submit issues if it does not work in Psych Engine.  
-[https://github.com/CodenameCrew/CodenameEngine](https://github.com/CodenameCrew/CodenameEngine)
+[https://github.com/CodenameCrew/CodenameEngine](https://github.com/CodenameCrew/CodenameEngine)  
 
 ---
 
 # Attributions
-This mod uses assets which were made by the following people
-[Saturnal](https://www.youtube.com/@saturnalmania)
-[Frictoy](https://www.youtube.com/channel/UCroWhqwtUZ7Z_ZedIgzNDdw)
+This mod uses assets which were made by the following people:  
+- [saturnal](https://www.youtube.com/@saturnalmania)  ("Press start to begin" and "SHUCKS" text at the end of the lyrical cutscene. *You are not allowed to use these without permission.*)
+- [Frictoy](https://www.youtube.com/channel/UCroWhqwtUZ7Z_ZedIgzNDdw)  (Lyrical cutscene in Shucks)
 
 ## Redistributing
 
-You are **NOT** allowed to republish this modpack anywhere else (i.e., Mediafire, Gamebanana, Mega, Google Drive, etc.).
+You are **NOT** allowed to republish this modpack anywhere else (i.e., Mediafire, Gamebanana, Mega, Google Drive, etc.).  
 
-You **ARE** allowed to:
-- Fork & Edit  (mostly for actual contibutions)
+You **ARE** allowed to:  
+- Fork & Edit  (mostly for actual contibutions)  
 
 ---
 
@@ -30,7 +30,7 @@ You **ARE** allowed to:
 
 If you would like to contribute, please create a *fork* of the repository and open a pull request.  
 Make sure to detail your changes.  
-All help is greatly appreciated.
+All help is greatly appreciated.  
 
 ---
 
@@ -42,4 +42,15 @@ If you represent the Jeffy's Infinite Irida team and would like this repository 
 
 ## Contact Information
 
-- Discord: **@abeanz**
+Lead Developer:  
+---
+### Beanz:  
+- Discord: **@abeanz**  
+
+---
+
+Occasional Asset Contribution (so like literally nothing, this is just for asking about reusing assets): 
+---
+### saturnal:  
+- Discord: @k_25ji  
+- Revolt: enaisnotanumber#8221  
