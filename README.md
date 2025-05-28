@@ -11,11 +11,6 @@ Do **not** submit issues if it does not work in Psych Engine.
 [https://github.com/CodenameCrew/CodenameEngine](https://github.com/CodenameCrew/CodenameEngine)
 
 ---
-# Attributions
-This mod features several things made by the following people
-
-[Saturnal](https://www.youtube.com/@saturnalmania) Press enter text, shucks text ect (peak person)
-[Frictoy](https://www.youtube.com/channel/UCroWhqwtUZ7Z_ZedIgzNDdw) Shucks 1 year anniversary cutscene
 
 ## Redistributing
 
