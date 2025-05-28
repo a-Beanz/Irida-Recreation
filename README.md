@@ -12,6 +12,11 @@ Do **not** submit issues if it does not work in Psych Engine.
 
 ---
 
+# Attributions
+This mod uses assets which were made by the following people
+[Saturnal](https://www.youtube.com/@saturnalmania)
+[Frictoy](https://www.youtube.com/channel/UCroWhqwtUZ7Z_ZedIgzNDdw)
+
 ## Redistributing
 
 You are **NOT** allowed to republish this modpack anywhere else (i.e., Mediafire, Gamebanana, Mega, Google Drive, etc.).
