@@ -14,8 +14,8 @@ Do **not** submit issues if it does not work in Psych Engine.
 
 # Attributions
 This mod uses assets which were made by the following people:  
-- [saturnal](https://www.youtube.com/@saturnalmania)  *(you are not allowed to use these without permission.)*
-- [Frictoy](https://www.youtube.com/channel/UCroWhqwtUZ7Z_ZedIgzNDdw)  
+- [saturnal](https://www.youtube.com/@saturnalmania)  ("Press start to begin" and "SHUCKS" text at the end of the lyrical cutscene. *You are not allowed to use these without permission.*)
+- [Frictoy](https://www.youtube.com/channel/UCroWhqwtUZ7Z_ZedIgzNDdw)  (Lyrical cutscene in Shucks)
 
 ## Redistributing
 
@@ -42,4 +42,15 @@ If you represent the Jeffy's Infinite Irida team and would like this repository 
 
 ## Contact Information
 
+Lead Developer:  
+---
+### Beanz:  
 - Discord: **@abeanz**  
+
+---
+
+Occasional Asset Contribution (so like literally nothing, this is just for asking about reusing assets): 
+---
+### saturnal:  
+- Discord: @k_25ji  
+- Revolt: enaisnotanumber#8221  
