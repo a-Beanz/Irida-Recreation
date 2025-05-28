@@ -1,8 +1,8 @@
 import flixel.FlxG;
 import flixel.math.FlxMath;
 
-var RotateAmount:Float = 0.7;
-var MoveAmount:Float = 4.5;
+var RotateAmount:Float = 0.7; // Reduced from 1 to 0.4 for less intense rotation
+var MoveAmount:Float = 4.5;   // Reduced from 6 to 2.5 for more subtle camera movement
 var RotateTime:Float = 1.8;
 var returnSpeed:Float = 1; 
 var direction:Int = 1;
@@ -45,7 +45,7 @@ function idkrotate() {
 
     // Movement offsets based on direction
     targetOffsetX = MoveAmount * direction;
-    targetOffsetY = MoveAmount * 0.5 * direction;
+    targetOffsetY = MoveAmount * 0.5 * direction; // Y movement is less intense
 
     angleTimer = RotateAmount;
 }
