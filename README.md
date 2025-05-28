@@ -1,8 +1,45 @@
 ![irida](https://static.wikia.nocookie.net/fridaynightfunking/images/7/71/IridaLogo.png/revision/latest/scale-to-width/360?cb=20241214011302)
-# Jeffy's Infinate Irida
-This Is A **FORK** Of KittySleeper's Irida recreation
-This Needs Codename Engine, Its Not Made In Psych
-# CONTRIBUTING
-If you'd like to contibute please FORK the repository and open a pull request detailing your changes, any if all help is greatly apreciated!
-# Getting Taken Down
-If Any Irida Devs Wish Me To Take This down DM Me On Discord *@abeanz* And I Will Make This Private
+
+# Jeffy's Infinite Irida
+
+This is a *fork* of KittySleeper's recreation.
+
+---
+
+This mod relies on ***Codename Engine.***  
+Do **not** submit issues if it does not work in Psych Engine.  
+[https://github.com/CodenameCrew/CodenameEngine](https://github.com/CodenameCrew/CodenameEngine)
+
+---
+# Attributions
+This mod features several things made by the following people
+
+[Saturnal](https://www.youtube.com/@saturnalmania) Press enter text, shucks text ect (peak person)
+[Frictoy](https://www.youtube.com/channel/UCroWhqwtUZ7Z_ZedIgzNDdw) Shucks 1 year anniversary cutscene
+
+## Redistributing
+
+You are **NOT** allowed to republish this modpack anywhere else (i.e., Mediafire, Gamebanana, Mega, Google Drive, etc.).
+
+You **ARE** allowed to:
+- Fork & Edit  (mostly for actual contibutions)
+
+---
+
+## Contributing
+
+If you would like to contribute, please create a *fork* of the repository and open a pull request.  
+Make sure to detail your changes.  
+All help is greatly appreciated.
+
+---
+
+## Takedown Requests
+
+If you represent the Jeffy's Infinite Irida team and would like this repository taken down, please message me on Discord and I will make the repository private.
+
+---
+
+## Contact Information
+
+- Discord: **@abeanz**

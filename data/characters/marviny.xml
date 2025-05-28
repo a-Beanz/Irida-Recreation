@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character x="-500" y="-150" sprite="shuck/marviny" flipX="true" camx="800" camy="-150" icon="marvin" color="#FF0000">
+	<anim name="idle" anim="Idle" x="-121" y="-141" fps="15" loop="true"/>
+	<anim name="singUP" anim="Up" x="-60" y="-49" fps="12" loop="false" indices="0..2,5..15"/>
+	<anim name="singRIGHT" anim="Right" x="-150" y="147" fps="15" loop="false" indices="0..15"/>
+	<anim name="singLEFT" anim="Left" x="115" y="-198" fps="12" loop="false" indices="0..15"/>
+	<anim name="singDOWN" anim="Down" x="-130" y="-255" fps="12" loop="false" indices="1..15"/>
+</character>
