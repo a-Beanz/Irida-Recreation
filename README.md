@@ -8,7 +8,7 @@ This is a *fork* of KittySleeper's recreation.
 
 ## Installation Tutorial
 
-https://file.garden/ZxSuon1aSwLywLRi/untitled.mp4
+https://github.com/user-attachments/assets/e9b566f1-0458-430b-8cc4-d953c6c0546e
 
 ---
 
