@@ -8,8 +8,10 @@ This is a *fork* of KittySleeper's recreation.
 
 ## Installation Tutorial
 
-Watch the installation tutorial here:  
-https://file.garden/ZxSuon1aSwLywLRi/untitled.mp4
+<video width="720" height="405" controls>
+  <source src="https://file.garden/ZxSuon1aSwLywLRi/untitled.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ---
 
