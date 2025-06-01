@@ -6,16 +6,23 @@ This is a *fork* of KittySleeper's recreation.
 
 ---
 
+## Installation Tutorial
+
+Watch the installation tutorial here:  
+https://file.garden/ZxSuon1aSwLywLRi/untitled.mp4
+
+---
+
 This mod relies on ***Codename Engine.***  
 Do **not** submit issues if it does not work in Psych Engine.  
-[https://github.com/CodenameCrew/CodenameEngine](https://github.com/CodenameCrew/CodenameEngine)  
+https://github.com/CodenameCrew/CodenameEngine  
 
 ---
 
 # Attributions
 This mod uses assets which were made by the following people:  
-- [saturnal](https://www.youtube.com/@saturnalmania)  ("Press start to begin" and "SHUCKS" text at the end of the lyrical cutscene. *You are not allowed to use these without permission.*)
-- [Frictoy](https://www.youtube.com/channel/UCroWhqwtUZ7Z_ZedIgzNDdw)  (Lyrical cutscene in Shucks)
+- https://www.youtube.com/@saturnalmania ("Press start to begin" and "SHUCKS" text at the end of the lyrical cutscene. *You are not allowed to use these without permission.*)
+- https://www.youtube.com/channel/UCroWhqwtUZ7Z_ZedIgzNDdw (Lyrical cutscene in Shucks)
 
 ## Redistributing
 
