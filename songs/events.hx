@@ -14,8 +14,8 @@ var camVideo:FlxCamera = null;
 
 function create() {
     camVideo = new FlxCamera();
-    camVideo.bgColor = 0x00000000; // Transparent background
-    FlxG.cameras.add(camVideo, false); // Add without making it default
+    camVideo.bgColor = 0x00000000;
+    FlxG.cameras.add(camVideo, false);
 }
 
 function intro() {
@@ -26,7 +26,7 @@ function intro() {
     coolIntroThing.updateHitbox();
     coolIntroThing.screenCenter(FlxAxes.Y);
 
-    camHudElements.push(coolIntroThing); // Track it for hiding
+    camHudElements.push(coolIntroThing);
 
     FlxTween.tween(coolIntroThing, {x: (FlxG.width / 2) - (coolIntroThing.width / 2)}, 0.5, {
         ease: FlxEase.expoInOut,
@@ -59,7 +59,7 @@ function playVideo(videoFile:String) {
     video.antialiasing = true;
     video.alpha = 1;
     video.visible = true;
-    video.cameras = [camVideo]; // Assign to separate camera
+    video.cameras = [camVideo];
 
     video.bitmap.onFormatSetup.add(function():Void {
         if (video.bitmap != null && video.bitmap.bitmapData != null) {

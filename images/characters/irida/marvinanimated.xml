@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="smlanimatedmarvin.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down marvin0000" x="1" y="1" width="562" height="1041"/>
+	<SubTexture name="down marvin0001" x="1" y="1" width="562" height="1041"/>
+	<SubTexture name="down marvin0002" x="564" y="1" width="562" height="1041"/>
+	<SubTexture name="down marvin0003" x="564" y="1" width="562" height="1041"/>
+	<SubTexture name="down marvin0004" x="564" y="1" width="562" height="1041"/>
+	<SubTexture name="down marvin0005" x="564" y="1" width="562" height="1041"/>
+	<SubTexture name="down marvin0006" x="564" y="1" width="562" height="1041"/>
+	<SubTexture name="down marvin0007" x="564" y="1" width="562" height="1041"/>
+	<SubTexture name="idle marvin0000" x="1127" y="1" width="485" height="1030"/>
+	<SubTexture name="idle marvin0001" x="1127" y="1" width="485" height="1030"/>
+	<SubTexture name="idle marvin0002" x="1127" y="1" width="485" height="1030"/>
+	<SubTexture name="idle marvin0003" x="1127" y="1" width="485" height="1030"/>
+	<SubTexture name="idle marvin0004" x="1127" y="1" width="485" height="1030"/>
+	<SubTexture name="idle marvin0005" x="1613" y="1" width="485" height="1030"/>
+	<SubTexture name="idle marvin0006" x="1613" y="1" width="485" height="1030"/>
+	<SubTexture name="idle marvin0007" x="1613" y="1" width="485" height="1030"/>
+	<SubTexture name="idle marvin0008" x="1613" y="1" width="485" height="1030"/>
+	<SubTexture name="idle marvin0009" x="1613" y="1" width="485" height="1030"/>
+	<SubTexture name="left marvin0000" x="2099" y="1" width="605" height="1030"/>
+	<SubTexture name="left marvin0001" x="2099" y="1" width="605" height="1030"/>
+	<SubTexture name="left marvin0002" x="2705" y="1" width="605" height="1030"/>
+	<SubTexture name="left marvin0003" x="2705" y="1" width="605" height="1030"/>
+	<SubTexture name="left marvin0004" x="2705" y="1" width="605" height="1030"/>
+	<SubTexture name="left marvin0005" x="2705" y="1" width="605" height="1030"/>
+	<SubTexture name="left marvin0006" x="2705" y="1" width="605" height="1030"/>
+	<SubTexture name="left marvin0007" x="2705" y="1" width="605" height="1030"/>
+	<SubTexture name="right marvin0000" x="3311" y="1" width="666" height="1055"/>
+	<SubTexture name="right marvin0001" x="3311" y="1" width="666" height="1055"/>
+	<SubTexture name="right marvin0002" x="1" y="1057" width="666" height="1055"/>
+	<SubTexture name="right marvin0003" x="1" y="1057" width="666" height="1055"/>
+	<SubTexture name="right marvin0004" x="1" y="1057" width="666" height="1055"/>
+	<SubTexture name="right marvin0005" x="1" y="1057" width="666" height="1055"/>
+	<SubTexture name="right marvin0006" x="1" y="1057" width="666" height="1055"/>
+	<SubTexture name="right marvin0007" x="1" y="1057" width="666" height="1055"/>
+	<SubTexture name="up marvin0000" x="668" y="1057" width="474" height="1035"/>
+	<SubTexture name="up marvin0001" x="668" y="1057" width="474" height="1035"/>
+	<SubTexture name="up marvin0002" x="1143" y="1057" width="474" height="1035"/>
+	<SubTexture name="up marvin0003" x="1143" y="1057" width="474" height="1035"/>
+	<SubTexture name="up marvin0004" x="1143" y="1057" width="474" height="1035"/>
+	<SubTexture name="up marvin0005" x="1143" y="1057" width="474" height="1035"/>
+	<SubTexture name="up marvin0006" x="1143" y="1057" width="474" height="1035"/>
+	<SubTexture name="up marvin0007" x="1143" y="1057" width="474" height="1035"/>
+</TextureAtlas>

@@ -86,11 +86,11 @@ function create() {
         }
     });
 
-    enterImage = new FlxSprite(-FlxG.width, 0).loadGraphic(Paths.image("MenuAssets/enter"));
+    enterImage = new FlxSprite(0, FlxG.height).loadGraphic(Paths.image("MenuAssets/enter"));
     enterImage.alpha = 0;
     enterImage.scale.set(1, 1);
 
-    logoImage = new FlxSprite(FlxG.width, 0).loadGraphic(Paths.image("MenuAssets/Logo"));
+    logoImage = new FlxSprite(0, -FlxG.height).loadGraphic(Paths.image("MenuAssets/Logo"));
     logoImage.alpha = 0;
     logoImage.scale.set(1, 1);
 
@@ -162,8 +162,8 @@ function startScrollingBG() {
 
             FlxTween.tween(enterImage, {alpha: 1}, 1, {ease: FlxEase.quadOut});
             FlxTween.tween(logoImage, {alpha: 1}, 1, {ease: FlxEase.quadOut});
-            FlxTween.tween(enterImage, {x: 0}, 1, {ease: FlxEase.cubeOut});
-            FlxTween.tween(logoImage, {x: 0}, 1, {ease: FlxEase.cubeOut});
+            FlxTween.tween(enterImage, {y: FlxG.height - enterImage.height}, 1, {ease: FlxEase.cubeOut});
+            FlxTween.tween(logoImage, {y: 0}, 1, {ease: FlxEase.cubeOut});
         }
     });
 }

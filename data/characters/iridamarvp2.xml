@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="irida/marvinanimated" icon="marvin" color="#FF0000">
+	<anim name="idle" anim="idle" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singUP" anim="up" x="-6" y="5" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="left" x="95" y="-5" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="right" x="-35" y="-1" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="down" x="60" y="-8" fps="24" loop="false"/>
+</character>

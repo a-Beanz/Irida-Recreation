@@ -20,8 +20,9 @@ https://github.com/CodenameCrew/CodenameEngine
 
 # Attributions
 This mod uses assets which were made by the following people:  
-- https://www.youtube.com/@saturnalmania ("Press start to begin" and "SHUCKS" text at the end of the lyrical cutscene. *You are not allowed to use these without permission.*)
-- https://www.youtube.com/channel/UCroWhqwtUZ7Z_ZedIgzNDdw (Lyrical cutscene in Shucks)
+- [Saturnal](https://www.youtube.com/@saturnalmania) ("Press start to begin" and "SHUCKS" text at the end of the lyrical cutscene. *You are not allowed to use these without permission.*)
+- [Frictoy](https://www.youtube.com/channel/UCroWhqwtUZ7Z_ZedIgzNDdw) (Lyrical cutscene in Shucks)
+- baja_snick (Jimmy Phase 2 sprites in "irida")
 
 ## Redistributing
 
