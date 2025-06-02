@@ -23,6 +23,7 @@ This mod uses assets which were made by the following people:
 - [Saturnal](https://www.youtube.com/@saturnalmania) ("Press start to begin" and "SHUCKS" text at the end of the lyrical cutscene. *You are not allowed to use these without permission.*)
 - [Frictoy](https://www.youtube.com/channel/UCroWhqwtUZ7Z_ZedIgzNDdw) (Lyrical cutscene in Shucks)
 - baja_snick (Jimmy Phase 2 sprites in "irida")
+- [kokoshibo_upper_moon_1._52681](https://www.youtube.com/channel/UCtNlKITpK_Sei1gSjbB7Q2A) (Contributes the phase two marvin sprites, not sure who made the sheet though :( )
 
 ## Redistributing
 
