@@ -2,7 +2,9 @@
 
 # Jeffy's Infinite Irida
 
-This is a *fork* of KittySleeper's recreation.  
+This is a *fork* of KittySleeper's recreation.
+---
+if you wish to reuse any of MY assets or code PLEASE dm me on discord (@abeanz) and ASK first
 
 ---
 
@@ -24,6 +26,7 @@ This mod uses assets which were made by the following people:
 - [Frictoy](https://www.youtube.com/channel/UCroWhqwtUZ7Z_ZedIgzNDdw) (Lyrical cutscene in Shucks)
 - baja_snick (Jimmy Phase 2 sprites in "irida")
 - [kokoshibo_upper_moon_1._52681](https://www.youtube.com/channel/UCtNlKITpK_Sei1gSjbB7Q2A) (Contributes the phase two marvin sprites, not sure who made the sheet though :( )
+- [Shadowman](https://x.com/In_The_Shadow08) (DETG sprites in shucks)
 
 ## Redistributing
 
