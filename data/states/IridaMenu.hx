@@ -86,11 +86,11 @@ function create() {
         }
     });
 
-    enterImage = new FlxSprite(0, FlxG.height).loadGraphic(Paths.image("MenuAssets/enter"));
+    enterImage = new FlxSprite(-FlxG.width, 0).loadGraphic(Paths.image("MenuAssets/enter"));
     enterImage.alpha = 0;
     enterImage.scale.set(1, 1);
 
-    logoImage = new FlxSprite(0, -FlxG.height).loadGraphic(Paths.image("MenuAssets/Logo"));
+    logoImage = new FlxSprite(FlxG.width, 0).loadGraphic(Paths.image("MenuAssets/Logo"));
     logoImage.alpha = 0;
     logoImage.scale.set(1, 1);
 
@@ -162,8 +162,8 @@ function startScrollingBG() {
 
             FlxTween.tween(enterImage, {alpha: 1}, 1, {ease: FlxEase.quadOut});
             FlxTween.tween(logoImage, {alpha: 1}, 1, {ease: FlxEase.quadOut});
-            FlxTween.tween(enterImage, {y: FlxG.height - enterImage.height}, 1, {ease: FlxEase.cubeOut});
-            FlxTween.tween(logoImage, {y: 0}, 1, {ease: FlxEase.cubeOut});
+            FlxTween.tween(enterImage, {x: 0}, 1, {ease: FlxEase.cubeOut});
+            FlxTween.tween(logoImage, {x: 0}, 1, {ease: FlxEase.cubeOut});
         }
     });
 }
@@ -232,7 +232,6 @@ function update(elapsed) {
             FlxTween.tween(flashImage, {alpha: 1}, 0.3, {
                 ease: FlxEase.quadOut,
                 onComplete: function(_) {
-                    // Fade out menu elements first
                     FlxTween.tween(enterImage, {alpha: 0}, 0.3);
                     FlxTween.tween(logoImage, {alpha: 0}, 0.3);
                     FlxTween.tween(bg1, {alpha: 0}, 0.3);
@@ -242,7 +241,6 @@ function update(elapsed) {
                     FlxTween.tween(bottomImage, {alpha: 0}, 0.3);
                     FlxTween.tween(bottomImage2, {alpha: 0}, 0.3);
                     
-                    // After menu elements fade out, fade out flash and switch state
                     FlxTween.tween(flashImage, {alpha: 0}, 0.3, {
                         ease: FlxEase.quadOut,
                         startDelay: 0.3,
