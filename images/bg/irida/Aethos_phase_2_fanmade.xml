@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Aethos_phase_2_fanmade.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="ezgif-6-1ed231e80e-00000" x="0" y="0" width="804" height="453" frameX="2" frameY="2" frameWidth="800" frameHeight="449"/>
+	<SubTexture name="ezgif-6-1ed231e80e-10000" x="0" y="453" width="804" height="453" frameX="2" frameY="2" frameWidth="800" frameHeight="449"/>
+	<SubTexture name="ezgif-6-1ed231e80e-20000" x="1608" y="0" width="804" height="453" frameX="2" frameY="2" frameWidth="800" frameHeight="449"/>
+	<SubTexture name="ezgif-6-1ed231e80e-30000" x="1608" y="453" width="804" height="453" frameX="2" frameY="2" frameWidth="800" frameHeight="449"/>
+	<SubTexture name="ezgif-6-1ed231e80e-40000" x="804" y="453" width="804" height="453" frameX="2" frameY="2" frameWidth="800" frameHeight="449"/>
+	<SubTexture name="ezgif-6-1ed231e80e-50000" x="1608" y="906" width="804" height="453" frameX="2" frameY="2" frameWidth="800" frameHeight="449"/>
+	<SubTexture name="ezgif-6-1ed231e80e-60000" x="0" y="906" width="804" height="453" frameX="2" frameY="2" frameWidth="800" frameHeight="449"/>
+	<SubTexture name="ezgif-6-1ed231e80e-70000" x="804" y="906" width="804" height="453" frameX="2" frameY="2" frameWidth="800" frameHeight="449"/>
+	<SubTexture name="ezgif-6-1ed231e80e-80000" x="0" y="1359" width="804" height="453" frameX="2" frameY="2" frameWidth="800" frameHeight="449"/>
+	<SubTexture name="ezgif-6-1ed231e80e-90000" x="804" y="0" width="804" height="453" frameX="2" frameY="2" frameWidth="800" frameHeight="449"/>
+</TextureAtlas>

@@ -4,7 +4,7 @@ import flixel.FlxG;
 import flixel.tweens.FlxTween;
 import flixel.tweens.FlxEase;
 import funkin.backend.utils.WindowUtils;
-import flixel.system.FlxSound;
+import funkin.backend.utils.CoolUtil; // <-- added
 import flixel.input.keyboard.FlxKey;
 import funkin.backend.MusicBeatState;
 import funkin.game.cutscenes.VideoCutscene;
@@ -12,6 +12,7 @@ import funkin.game.cutscenes.VideoCutscene;
 var pauseCam:FlxCamera;
 var flashCam:FlxCamera;
 
+var shade:FlxSprite;
 var bg1:FlxSprite;
 var bg2:FlxSprite;
 var warning:FlxSprite;
@@ -23,16 +24,13 @@ var bottomImage:FlxSprite;
 var bottomImage2:FlxSprite;
 
 var flashImage:FlxSprite;
-var selectSound:FlxSound;
 
 var lastWidth:Int;
 var lastHeight:Int;
 var showBG:Bool = false;
 var imagesSlidingInDone:Bool = false;
-var warningSound:FlxSound;
-var menuSound:FlxSound;
 
-var BPM:Int = 76;
+var BPM:Int = 72;
 var beatTimer:Float = 0;
 var beatInterval:Float = 60 / BPM;
 
@@ -40,11 +38,8 @@ var enterPressed:Bool = false;
 var currentVideo:VideoCutscene = null;
 
 function create() {
-    warningSound = FlxG.sound.load(Paths.music('Warning'));
-    menuSound = FlxG.sound.load(Paths.music('freakyMenu'));
-    selectSound = FlxG.sound.load(Paths.sound('menu/confirm'));
-
-    warningSound.play();
+    // Play warning sound as menu SFX
+    CoolUtil.playMusic(Paths.music('Warning'), false, 1, false, BPM);
 
     pauseCam = new FlxCamera();
     flashCam = new FlxCamera();
@@ -70,7 +65,14 @@ function create() {
                 startDelay: 7,
                 ease: FlxEase.quadIn,
                 onStart: function(_) {
-                    FlxTween.tween(warningSound, {volume: 0}, 1);
+                    // Fade out music with the image
+                    FlxTween.num(1, 0, 1, {
+                        ease: FlxEase.quadIn
+                    }, function(vol:Float) {
+                        if (Conductor.inst != null) {
+                            Conductor.inst.volume = vol;
+                        }
+                    });
                 },
                 onComplete: function(_) {
                     remove(warning);
@@ -86,30 +88,23 @@ function create() {
         }
     });
 
+
     enterImage = new FlxSprite(-FlxG.width, 0).loadGraphic(Paths.image("MenuAssets/enter"));
     enterImage.alpha = 0;
-    enterImage.scale.set(1, 1);
-
     logoImage = new FlxSprite(FlxG.width, 0).loadGraphic(Paths.image("MenuAssets/Logo"));
     logoImage.alpha = 0;
-    logoImage.scale.set(1, 1);
-
     topImage = new FlxSprite(0, -FlxG.height).loadGraphic(Paths.image("MenuAssets/top"));
     topImage.scrollFactor.set(0, 0);
     topImage.visible = false;
-
     topImage2 = new FlxSprite(topImage.width, -FlxG.height).loadGraphic(Paths.image("MenuAssets/top"));
     topImage2.scrollFactor.set(0, 0);
     topImage2.visible = false;
-
     bottomImage = new FlxSprite(0, FlxG.height).loadGraphic(Paths.image("MenuAssets/bottom"));
     bottomImage.scrollFactor.set(0, 0);
     bottomImage.visible = false;
-
     bottomImage2 = new FlxSprite(-bottomImage.width, FlxG.height).loadGraphic(Paths.image("MenuAssets/bottom"));
     bottomImage2.scrollFactor.set(0, 0);
     bottomImage2.visible = false;
-
     flashImage = new FlxSprite(0, 0).loadGraphic(Paths.image("MenuAssets/red"));
     flashImage.alpha = 0;
     flashImage.scrollFactor.set();
@@ -121,9 +116,8 @@ function create() {
 }
 
 function startScrollingBG() {
-    menuSound.play();
-    menuSound.volume = 0;
-    FlxTween.tween(menuSound, {volume: 1}, 1);
+    // Start menu music using Conductor
+    CoolUtil.playMusic(Paths.music('freakyMenu'), true, 1, true, BPM);
     showBG = true;
 
     bg1 = new FlxSprite(0, 0).loadGraphic(Paths.image("MenuAssets/iridabg"));
@@ -133,12 +127,16 @@ function startScrollingBG() {
     bg1.scrollFactor.set(1, 1);
     bg2.scrollFactor.set(1, 1);
 
+    shade = new FlxSprite(0, 0).loadGraphic(Paths.image("MenuAssets/shade"));
+    shade.scrollFactor.set(0, 0);
+    shade.alpha = 1;
+
     insert(0, bg1);
     insert(1, bg2);
+    insert(2, shade);
 
     FlxTween.tween(bg1, {alpha: 1}, 1);
     FlxTween.tween(bg2, {alpha: 1}, 1);
-
     topImage.visible = true;
     bottomImage.visible = true;
     topImage2.visible = true;
@@ -148,7 +146,6 @@ function startScrollingBG() {
     add(topImage2);
     add(bottomImage);
     add(bottomImage2);
-
     add(enterImage);
     add(logoImage);
 
@@ -159,7 +156,6 @@ function startScrollingBG() {
         ease: FlxEase.quadOut,
         onComplete: function(_) {
             imagesSlidingInDone = true;
-
             FlxTween.tween(enterImage, {alpha: 1}, 1, {ease: FlxEase.quadOut});
             FlxTween.tween(logoImage, {alpha: 1}, 1, {ease: FlxEase.quadOut});
             FlxTween.tween(enterImage, {x: 0}, 1, {ease: FlxEase.cubeOut});
@@ -226,12 +222,14 @@ function update(elapsed) {
 
         if (FlxG.keys.justPressed.check(FlxKey.ENTER) && !enterPressed) {
             enterPressed = true;
-            selectSound.play();
+        FlxG.sound.play(Paths.sound('confirm'), 1);
+
 
             flashImage.alpha = 0;
             FlxTween.tween(flashImage, {alpha: 1}, 0.3, {
                 ease: FlxEase.quadOut,
                 onComplete: function(_) {
+                    // fade out visual elements
                     FlxTween.tween(enterImage, {alpha: 0}, 0.3);
                     FlxTween.tween(logoImage, {alpha: 0}, 0.3);
                     FlxTween.tween(bg1, {alpha: 0}, 0.3);
@@ -240,7 +238,7 @@ function update(elapsed) {
                     FlxTween.tween(topImage2, {alpha: 0}, 0.3);
                     FlxTween.tween(bottomImage, {alpha: 0}, 0.3);
                     FlxTween.tween(bottomImage2, {alpha: 0}, 0.3);
-                    
+
                     FlxTween.tween(flashImage, {alpha: 0}, 0.3, {
                         ease: FlxEase.quadOut,
                         startDelay: 0.3,

@@ -1,0 +1,9 @@
+{
+    "params": [
+        {
+            "name": "value Zoom Camera(Float)",
+            "type": "Float(0.0, 9999, 1, 2)",
+            "defaultValue": "0"
+        }
+    ]
+}

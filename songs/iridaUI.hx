@@ -3,8 +3,10 @@ import funkin.backend.utils.WindowUtils;
 
 var iridaHealthBar;
 var scoreTxtPos = [250, 0, -250];
+var shouldFlipHealthBar = false;
 
-function create() { // no irida song has a countdown lol
+function create() {
+	// No Irida song has a countdown
 	introLength = 0;
 }
 
@@ -31,17 +33,30 @@ function postCreate() {
 }
 
 function postUpdate(elapsed) {
-	iconP1.setPosition(iridaHealthBar.width * 0.84, iridaHealthBar.y + 15);
-	iconP2.setPosition(iridaHealthBar.width * 0.05, iridaHealthBar.y);
+	var icon1PosX = iridaHealthBar.width * 0.84;
+	var icon2PosX = iridaHealthBar.width * 0.05;
+
+	if (shouldFlipHealthBar) {
+		iconP1.setPosition(icon2PosX, iridaHealthBar.y + 15);
+		iconP2.setPosition(icon1PosX, iridaHealthBar.y);
+	} else {
+		iconP1.setPosition(icon1PosX, iridaHealthBar.y + 15);
+		iconP2.setPosition(icon2PosX, iridaHealthBar.y);
+	}
+
+	healthBar.flipX = shouldFlipHealthBar;
 }
 
 function onGamePause(e) {
 	e.cancel();
-
 	persistentUpdate = false;
 	persistentDraw = true;
 	paused = true;
 
 	openSubState(new ModSubState("IridaPause"));
 	updateDiscordPresence();
+}
+
+function swapIcons() { // function for hscript to call for swapping icons in certian songs.
+	shouldFlipHealthBar = true;
 }

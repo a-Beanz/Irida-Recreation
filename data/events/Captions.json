@@ -1,0 +1,14 @@
+{
+    "params": [
+        {
+            "name": "Fade out",
+            "type": "Bool",
+            "defaultValue": "false"
+        },
+        {
+            "name": "Text",
+            "type": "String",
+            "defaultValue": ""
+        }
+    ]
+}

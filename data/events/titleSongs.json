@@ -1,0 +1,14 @@
+{
+	"params": [
+		{
+			"name": "Duracion",
+			"type": "Float(0, 99, 1, 2)",
+			"defaultValue": 0
+		},
+		{
+			"name": "Curtitle",
+			"type": "String",
+			"defaultValue": ""
+		}
+	]
+}

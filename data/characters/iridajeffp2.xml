@@ -1,8 +1,8 @@
 <!DOCTYPE codename-engine-character>
-<character sprite="irida/jerryanimated" flipX="true" icon="jerry" color="#FFDD00">
+<character sprite="irida/jerryanimated" scale="0.75" camx="-250" camy="-50" icon="icon-AnimatedJ" color="#FFDD00">
 	<anim name="idle" anim="idle" x="0" y="0" fps="24" loop="false"/>
-	<anim name="singUP" anim="up" x="46" y="23" fps="24" loop="false"/>
-	<anim name="singLEFT" anim="right" x="74" y="11" fps="24" loop="false"/>
-	<anim name="singRIGHT" anim="left" x="38" y="26" fps="24" loop="false"/>
-	<anim name="singDOWN" anim="down" x="65" y="-10" fps="24" loop="false"/>
+	<anim name="singUP" anim="up" x="-5" y="20" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="left" x="35" y="25" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="right" x="60" y="5" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="down" x="10" y="-5" fps="24" loop="false"/>
 </character>

@@ -1,4 +1,4 @@
-import hxvlc.flixel.FlxVideoSprite; // WE USING HXVCL NOW YIPPIE!!
+import hxvlc.flixel.FlxVideoSprite;
 import flixel.util.FlxTimer;
 import flixel.FlxG;
 import flixel.FlxObject;
@@ -11,11 +11,13 @@ import flixel.util.FlxAxes;
 var video:FlxVideoSprite = null;
 var camHudElements:Array<FlxObject> = [];
 var camVideo:FlxCamera = null;
+var videoPlaying:Bool = false;
+var camVideoActive:Bool = true;
 
 function create() {
     camVideo = new FlxCamera();
-    camVideo.bgColor = 0x00000000;
-    FlxG.cameras.add(camVideo, false);
+    camVideo.bgColor = 0x00000000; // Transparent background
+    FlxG.cameras.add(camVideo, false); // Add but not default
 }
 
 function intro() {
@@ -37,6 +39,7 @@ function intro() {
             });
         }
     });
+
     add(coolIntroThing);
 }
 
@@ -51,47 +54,61 @@ function onEvent(event) {
 
         case "Play Video":
             playVideo(event.event.params[0]);
+
     }
 }
 
 function playVideo(videoFile:String) {
+    if (video != null) {
+        remove(video);
+        video.destroy();
+        video = null;
+    }
+
     video = new FlxVideoSprite(0, 0);
     video.antialiasing = true;
-    video.alpha = 1;
     video.visible = true;
+    video.alpha = 1;
     video.cameras = [camVideo];
 
-    video.bitmap.onFormatSetup.add(function():Void {
-        if (video.bitmap != null && video.bitmap.bitmapData != null) {
-            final scale:Float = Math.min(FlxG.width / video.bitmap.bitmapData.width, FlxG.height / video.bitmap.bitmapData.height);
-            video.setGraphicSize(video.bitmap.bitmapData.width * scale, video.bitmap.bitmapData.height * scale);
-            video.updateHitbox();
-            video.screenCenter();
-
-            video.alpha = 1;
-            video.visible = true;
-        }
-    });
-
-    video.bitmap.onEndReached.add(function():Void {
-        video.destroy();
-
-        for (item in camHudElements)
-            item.visible = true;
-    });
-
-    add(video);
-    video.alpha = 1;
-    video.visible = true;
-
-    for (item in camHudElements)
-        item.visible = false;
+    add(video); // Must add it before loading to ensure bitmap is prepared
 
     if (video.load(Paths.video(videoFile))) {
-        new FlxTimer().start(0.001, (_) -> {
-            video.alpha = 1;
-            video.visible = true;
-            video.play();
+        // Hook format setup after successful load
+        video.bitmap.onFormatSetup.add(function():Void {
+            if (video != null && video.bitmap != null && video.bitmap.bitmapData != null) {
+                final scale:Float = Math.min(FlxG.width / video.bitmap.bitmapData.width, FlxG.height / video.bitmap.bitmapData.height);
+                video.setGraphicSize(video.bitmap.bitmapData.width * scale, video.bitmap.bitmapData.height * scale);
+                video.updateHitbox();
+                video.screenCenter();
+            }
         });
+
+        video.bitmap.onEndReached.add(function():Void {
+            videoPlaying = false;
+            camVideoActive = false;
+
+
+            if (video != null) {
+                video.visible = false;
+                remove(video);
+                video.destroy();
+                video = null;
+            }
+
+            for (item in camHudElements)
+                item.visible = true;
+        });
+
+        for (item in camHudElements)
+            item.visible = false;
+
+        new FlxTimer().start(0.001, (_) -> {
+            video.play();
+            videoPlaying = true;
+            camVideoActive = true;
+        });
+    } else {
+        trace("Video failed to load: " + videoFile);
     }
 }
