@@ -27,7 +27,7 @@ This mod uses assets which were made by the following people:
 - baja_snick (Jimmy Phase 2 sprites in "irida")
 - [kokoshibo_upper_moon_1._52681](https://www.youtube.com/channel/UCtNlKITpK_Sei1gSjbB7Q2A) (Contributes the phase two marvin sprites, not sure who made the sheet though :( )
 - [Shadowman](https://x.com/In_The_Shadow08) (DETG sprites in shucks)
-
+- [jumpmonk](https://www.youtube.com/channel/UCMy0Y8OryO2ygVEiEu1stwQ) (high quality menu assets THANK YOU!!)
 ## Redistributing
 
 You are **NOT** allowed to republish this modpack anywhere else (i.e., Mediafire, Gamebanana, Mega, Google Drive, etc.).  
