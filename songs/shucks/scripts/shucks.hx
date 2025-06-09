@@ -9,7 +9,7 @@ var logo:FlxSprite = null;
 function stepHit(curStep:Int) {
     if (curStep == 3061) {
         logo = new FlxSprite(0, 0);
-        logo.loadGraphic(Paths.image("introThings/shucks")); // basically loads the sprite and shows it at a specific step.
+        logo.loadGraphic(Paths.image("introThings/sucks")); // basically loads the sprite and shows it at a specific step.
         logo.scrollFactor.set(0, 0);
         logo.alpha = 1;
 
